@@ -35,8 +35,8 @@ jobs:
       - name: Install tools
         run: |
           sudo apt-get update -y && sudo apt-get install -y dnf
-          sudo dnf install -y epel-release
-          sudo dnf install -y mysql-devel postgresql-devel freetds-devel krb5-libs clang-devel
+          sudo dnf install --releasever 28 -y epel-release
+          sudo dnf install --releasever 28 -y mysql-devel postgresql-devel freetds-devel krb5-libs clang-devel
 
       - name: Setup project
         run: |
