@@ -201,17 +201,17 @@ BibTeX entry:
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/ashwin153">
-                    <img src="https://avatars.githubusercontent.com/u/1892049?v=4" width="66;" alt="ashwin153"/>
-                    <br />
-                    <sub><b>Ashwin Madavan</b></sub>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/zen-xu">
                     <img src="https://avatars.githubusercontent.com/u/38552291?v=4" width="66;" alt="zen-xu"/>
                     <br />
                     <sub><b>ZhengYu, Xu</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/ashwin153">
+                    <img src="https://avatars.githubusercontent.com/u/1892049?v=4" width="66;" alt="ashwin153"/>
+                    <br />
+                    <sub><b>Ashwin Madavan</b></sub>
                 </a>
             </td>
 		</tr>
