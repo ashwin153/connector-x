@@ -6,7 +6,6 @@ on:
 jobs:
   linux-aarch:
     runs-on: ubuntu-latest
-    container: quay.io/pypa/manylinux_2_28_x86_64
     strategy:
       matrix:
         python-version: [[39, "3.9"], [310, "3.10"], [311, "3.11"], [312, "3.12"]]
