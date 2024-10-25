@@ -1,4 +1,4 @@
-name: release
+name: aarch64-test
 
 on:
   workflow_dispatch:
