@@ -5,7 +5,7 @@ on:
 
 jobs:
   linux-aarch:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     container: quay.io/pypa/manylinux_2_28_x86_64
     strategy:
       matrix:
@@ -45,6 +45,7 @@ jobs:
       - uses: PyO3/maturin-action@v1
         with:
           rust-toolchain: stable
+          container: ghcr.io/rust-cross/manylinux_2_28-cross:aarch64	
           command: build
           args: -m connectorx-python/Cargo.toml -i python --release --target aarch64-unknown-linux-gnu --manylinux 2_28 --features integrated-auth-gssapi
           before-script-linux: |
@@ -72,6 +73,7 @@ jobs:
       - uses: PyO3/maturin-action@v1
         with:
           rust-toolchain: stable
+          container: ghcr.io/rust-cross/manylinux_2_28-cross:aarch64	
           command: build
           args: -m connectorx-python/Cargo.toml -i python --release --target aarch64-unknown-linux-gnu --manylinux 2_28 --features integrated-auth-gssapi
           before-script-linux: |
