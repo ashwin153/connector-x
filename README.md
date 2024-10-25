@@ -488,6 +488,13 @@ BibTeX entry:
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/ashwin153">
+                    <img src="https://avatars.githubusercontent.com/u/1892049?v=4" width="66;" alt="ashwin153"/>
+                    <br />
+                    <sub><b>Ashwin Madavan</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/Amar1729">
                     <img src="https://avatars.githubusercontent.com/u/15623522?v=4" width="66;" alt="Amar1729"/>
                     <br />
