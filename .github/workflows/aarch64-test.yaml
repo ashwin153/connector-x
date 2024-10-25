@@ -45,7 +45,7 @@ jobs:
           before-script-linux: |
               # If we're running on debian-based system.
               apt-get update -y
-              apt-get install -y libssl-dev openssl pkg-config libgssapi-krb5 gcc-multilib
+              apt-get install -y libssl-dev openssl pkg-config libgssapi-krb5-2 gcc-multilib
         env:
           SQLITE3_STATIC: 1
 
@@ -63,7 +63,7 @@ jobs:
           before-script-linux: |
               # If we're running on debian-based system.
               apt-get update -y
-              apt-get install -y libssl-dev openssl pkg-config libgssapi-krb5 gcc-multilib
+              apt-get install -y libssl-dev openssl pkg-config libgssapi-krb5-2 gcc-multilib
         env:
           SQLITE3_STATIC: 1
 
