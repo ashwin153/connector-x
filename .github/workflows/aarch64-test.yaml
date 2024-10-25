@@ -34,7 +34,7 @@ jobs:
 
       - name: Install tools
         run: |
-          apt update -y && apt-get install -y dnf
+          apt-get update -y && apt-get install -y dnf
           dnf install -y epel-release
           dnf install -y mysql-devel postgresql-devel freetds-devel krb5-libs clang-devel
 
