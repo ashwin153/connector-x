@@ -6,7 +6,7 @@ on:
 jobs:
   linux-aarch:
     runs-on: macos-latest
-    container: quay.io/pypa/manylinux_2_28_aarch64
+    container: quay.io/pypa/manylinux_2_28_x86_64
     strategy:
       matrix:
         python-version: [[39, "3.9"], [310, "3.10"], [311, "3.11"], [312, "3.12"]]
@@ -23,7 +23,10 @@ jobs:
           components: rustfmt
           target: aarch64-unknown-linux-gnu
           default: true
-
+          
+      - name: Setup QEMU
+        uses: docker/setup-qemu-action@v1
+  
       - uses: extractions/setup-just@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
