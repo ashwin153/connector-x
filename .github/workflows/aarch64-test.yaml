@@ -44,7 +44,7 @@ jobs:
           args: -m connectorx-python/Cargo.toml -i python${{ matrix.python-version }} --release --features integrated-auth-gssapi
           before-script-linux: |
               apt-get update -y
-              apt-get install -y libssl-dev openssl pkg-config libkrb5-dev clang
+              apt-get install -y libssl-dev openssl pkg-config libkrb5-dev libclang-dev
         env:
           SQLITE3_STATIC: 1
 
@@ -61,7 +61,7 @@ jobs:
           args: -m connectorx-python/Cargo.toml -i python${{ matrix.python-version }} --release --features integrated-auth-gssapi
           before-script-linux: |
               apt-get update -y
-              apt-get install -y libssl-dev openssl pkg-config libkrb5-dev clang
+              apt-get install -y libssl-dev openssl pkg-config libkrb5-dev libclang-dev
         env:
           SQLITE3_STATIC: 1
 
